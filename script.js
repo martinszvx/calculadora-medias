@@ -15,5 +15,11 @@
         let n4 = parseFloat(document.getElementById('n4').value);
         let media = (n1+n2+n3+n4)/4;
         outputDiv.innerText = "A media é: " + media;
+        if( n1 < 0 || n2 <0 || n3<0 || n4 < 0){
+            outputDiv.innerText= "Valor digitado inválido"
+    }
+        if( n1 > 10 || n2 > 10 || n3 > 10 || n4 > 10){
+            outputDiv.innerText= "Valor digitado inválido"
+        }
         // --- SEU CÓDIGO TERMINA AQUI ---
     }
